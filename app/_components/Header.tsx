@@ -3,6 +3,8 @@ import { Section } from "./Section";
 import { cn } from "@/lib/utils";
 import { GithubIcon } from "./icons/GithubIcon";
 import { buttonVariants } from "@/components/ui/button";
+import { LinkedInIcon } from "./icons/LinkedInIcon";
+import { KofiIcon } from "./icons/KofiIcon";
 
 export const Header = () => {
     return (
@@ -10,15 +12,9 @@ export const Header = () => {
             <Section className="flex items-baseline">
                 <h1 className="text-lg font-bold text-primary">Chloé Nicolini 🐺</h1>
                 <div className="flex-1" />
-                <ul>
+                <ul className="flex items-center gap-2">
                     <Link
                     href="https://github.com/JinxedQuinn"
-                    className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
-                    >
-                        <GithubIcon size={16} className="text-foreground" />
-                    </Link>
-                    <Link
-                    href="https://ko-fi.com/jinxedquinn"
                     className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
                     >
                         <GithubIcon size={16} className="text-foreground" />
@@ -27,7 +23,13 @@ export const Header = () => {
                     href="https://www.linkedin.com/in/nicolinichloe/"
                     className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
                     >
-                        <GithubIcon size={16} className="text-foreground" />
+                        <LinkedInIcon size={16} className="text-foreground" />
+                    </Link>
+                    <Link
+                    href="https://ko-fi.com/jinxedquinn"
+                    className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+                    >
+                        <KofiIcon size={16} className="text-foreground" />
                     </Link>
                 </ul>
             </Section>
