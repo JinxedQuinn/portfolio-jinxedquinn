@@ -10,7 +10,8 @@ export const AdaIcon = (
       height={props.size}
       viewBox="0 0 388.000000 130.000000"
       preserveAspectRatio="xMidYMid meet"
-    >
+      {...props}
+      >
       <g
         transform="translate(0.000000,130.000000) scale(0.100000,-0.100000)"
         fill="#000000"
