@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from "react";
 
-export const KofiIcon = (
+export const ReactLogo = (
   props: ComponentPropsWithoutRef<"svg"> & { size?: number }
 ) => {
   return (

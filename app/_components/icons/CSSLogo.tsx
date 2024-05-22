@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from "react";
 
-export const CSSIcon = (
+export const CSSLogo = (
   props: ComponentPropsWithoutRef<"svg"> & { size?: number }
 ) => {
   return (

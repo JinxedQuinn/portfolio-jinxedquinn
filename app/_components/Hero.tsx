@@ -4,18 +4,7 @@ import { Section } from "./Section";
 import { GithubIcon } from "./icons/GithubIcon";
 import { AdaIcon } from "./icons/AdaIcon";
 import Link from "next/link";
-
-const Code = ({ className, ...props }: ComponentPropsWithoutRef<"span">) => {
-  return (
-    <span
-      className={cn(
-        "bg-accent/30 font-mono border border-accent px-1 hover:bg-accent/50  transition-colors py-0.5 text-primary rounded-sm",
-        className
-      )}
-      {...props}
-    ></span>
-  );
-};
+import { Code } from "./Code";
 
 export const Hero = () => {
   return (
