@@ -7,7 +7,7 @@ export const Contact = () => {
     <Section className="flex flex-col items-start gap-4">
       <Badge variant={"outline"}>Contact me</Badge>
       <h2 className=" pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        I will be happy to work with you
+        N'hésitez pas à me contacter !
       </h2>
       <div className="flex max-md:flex-col gap-4 w-full">
         <ContactCard
