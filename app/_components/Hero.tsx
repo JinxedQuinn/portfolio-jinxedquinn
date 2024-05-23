@@ -26,10 +26,10 @@ export const Hero = () => {
           <Link href="https://adatechschool.fr/">
             <Code className="inline-flex items-center gap-1">
               <AdaIcon size={16} className="inline" />
-              Ada Tech School !
+              Ada Tech School
             </Code>
           </Link>
-          Living in{" "}
+          ! Living in{" "}
           <Link href="https://www.google.fr/maps/place/Paris/@48.8335502,2.2670408,12z/data=!4m6!3m5!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.8575475!4d2.3513765!16zL20vMDVxdGo?entry=ttu">
             <Code className="inline-flex items-center gap-1">
               <img
