@@ -3,14 +3,14 @@ import { Badge } from "@/components/ui/badge";
 
 export const WORKS: WorkProps[] = [
   {
-    image: "http://www.clavim.asso.fr/wp-content/uploads/2016/07/logo-web-retina_2016.png",
+    image: "https://upload.wikimedia.org/wikipedia/fr/thumb/d/dd/Logo_Issy-les-Moulineaux.svg/1280px-Logo_Issy-les-Moulineaux.svg.png",
     title: "CLAVIM",
     role: "Animatrice Jeunesse en Alternance",
     date: "Nov. 2021 - Nov. 2022",
     url: "http://www.clavim.asso.fr/espace-jeunes-anne-frank",
   },
   {
-    image: "http://www.clavim.asso.fr/wp-content/uploads/2016/07/logo-web-retina_2016.png",
+    image: "https://upload.wikimedia.org/wikipedia/fr/thumb/d/dd/Logo_Issy-les-Moulineaux.svg/1280px-Logo_Issy-les-Moulineaux.svg.png",
     title: "CLAVIM",
     role: "Animatrice Jeunesse, Animations de quartier",
     date: "Juillet 2021",
@@ -32,7 +32,7 @@ export const WORKS: WorkProps[] = [
     url: "http://www.clavim.asso.fr/espace-jeunes-anne-frank",
   },
   {
-    image: "http://www.clavim.asso.fr/wp-content/uploads/2016/07/logo-web-retina_2016.png",
+    image: "https://upload.wikimedia.org/wikipedia/fr/thumb/d/dd/Logo_Issy-les-Moulineaux.svg/1280px-Logo_Issy-les-Moulineaux.svg.png",
     title: "CLAVIM",
     role: "Animatrice Jeunesse",
     date: "2021 - 2023",
