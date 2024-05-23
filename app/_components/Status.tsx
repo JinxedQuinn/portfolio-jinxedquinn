@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { SIDE_PROJECTS, SideProjects } from "./SideProjects";
 import { ContactCard } from "./ContactCard";
 import { WORKS, Work } from "./WORKS";
+import { DIPLOME, Diplome } from "./DIPLOME";
 
 export const Status = () => {
   return (
@@ -25,15 +26,15 @@ export const Status = () => {
       </div>
       <div className="flex-[2] flex flex-col gap-4 w-full">
         <Card className="p-4 flex-1">
-          <p className="text-lg text-muted-foreground">Work</p>
+          <p className="text-lg text-muted-foreground">Pro</p>
           <div className="flex flex-col gap-4">
-            {WORKS.map((work, index) => (
-              <Work key={index} {...work} />
+            {DIPLOME.map((diplome, index) => (
+              <Diplome key={index} {...diplome} />
             ))}
           </div>
         </Card>
         <Card className="p-4 flex-1 flex flex-col gap-2">
-          <p className="text-lg text-muted-foreground">Contact me</p>
+          <p className="text-lg text-muted-foreground">Diplômes</p>
           <ContactCard
             url="https://x.com/melvynxdev"
             name="@melvynxdev"

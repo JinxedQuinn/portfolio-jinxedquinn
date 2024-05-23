@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 
-export const WORKS: WorkProps[] = [
+export const DIPLOME: DiplomeProps[] = [
   {
     image: "http://www.clavim.asso.fr/wp-content/uploads/2016/07/logo-web-retina_2016.png",
     title: "CLAVIM",
@@ -15,7 +15,6 @@ export const WORKS: WorkProps[] = [
     role: "Animatrice Jeunesse, Animations de quartier",
     date: "Juillet 2021",
     url: "https://www.ubereats.com/fr",
-    freelance: false,
   },
   {
     image: "https://upload.wikimedia.org/wikipedia/fr/thumb/d/dd/Logo_Issy-les-Moulineaux.svg/1280px-Logo_Issy-les-Moulineaux.svg.png",
@@ -39,15 +38,14 @@ export const WORKS: WorkProps[] = [
     url: "http://www.clavim.asso.fr/espace-jeunes-anne-frank",
   },
 ];
-type WorkProps = {
+type DiplomeProps = {
   image: string;
   title: string;
   role: string;
   date: string;
   url: string;
-  freelance?: boolean;
 };
-export const Work = (props: WorkProps) => {
+export const Diplome = (props: DiplomeProps) => {
   return (
     <Link
       href={props.url}
@@ -60,7 +58,6 @@ export const Work = (props: WorkProps) => {
       <div className="mr-auto">
         <div className="flex items-center gap-2">
           <p className="text-lg font-semibold">{props.title}</p>
-          {props.freelance && <Badge variant="outline">Mission</Badge>}
         </div>
 
         <p className="text-xs text-muted-foreground">{props.role}</p>
