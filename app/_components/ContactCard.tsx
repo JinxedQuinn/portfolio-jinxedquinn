@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -15,12 +16,12 @@ export const ContactCard = (props: {
     <Link href={props.name} className={cn("w-full", props.classname)}>
       <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4">
         <div className="relative h-10 w-10">
-          <img
+          <Image
             src={props.image}
             alt={props.name}
             className="w-10 h-10 rounded-full object-contain"
           />
-          <img
+          <Image
             src={props.mediumImage}
             alt={props.name}
             className="w-4 h-4 absolute -bottom-1 -right-1 rounded-full object-contain"
