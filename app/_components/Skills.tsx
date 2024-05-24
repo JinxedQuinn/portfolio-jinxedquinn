@@ -1,48 +1,153 @@
-import { Badge } from "@/components/ui/badge";
-import { Code } from "./Code";
+"use client";
+import { cn } from "@/lib/utils";
+import Marquee from "@/components/magicui/marquee";
 import { Section } from "./Section";
-import { ReactLogo } from "./icons/ReactLogo";
-import { TailwindLogo } from "./icons/TailwindLogo";
-import { NextJSLogo } from "./icons/NextJSLogo";
 
-export const Skills = () => {
+const reviews = [
+  {
+    name: "GitHub",
+    username: "@GitHub",
+    body: "GitHub",
+    img: "/github.svg",
+  },
+  {
+    name: "Notion",
+    username: "@Notion",
+    body: "Notion",
+    img: "/notion.svg",
+  },
+  {
+    name: "Discord",
+    username: "@Discord",
+    body: "Discord",
+    img: "/discord.svg",
+  },
+  {
+    name: "Slack",
+    username: "@Slack",
+    body: "Slack",
+    img: "/slack.svg",
+  },
+  {
+    name: "MacOS",
+    username: "@MacOS",
+    body: "MacOS",
+    img: "/apple.svg",
+  },
+  {
+    name: "ChatGPT",
+    username: "@ChatGPT",
+    body: "OpenAI",
+    img: "/openai.svg",
+  },
+  {
+    name: "Vercel",
+    username: "@Vercel",
+    body: "Vercel",
+    img: "/vercel.svg",
+  },
+  {
+    name: "VS Code",
+    username: "@vscode",
+    body: "VS Code",
+    img: "/vscode.svg",
+  },
+  {
+    name: "Javascript",
+    username: "@javascript",
+    body: "Javascript",
+    img: "/javascript.svg",
+  },
+  {
+    name: "HTML",
+    username: "@Html",
+    body: "HTML",
+    img: "/html5.svg",
+  },
+  {
+    name: "CSS",
+    username: "@CSS",
+    body: "CSS",
+    img: "/css3.svg",
+  },
+  {
+    name: "TailwindCSS",
+    username: "@TailwindCSS",
+    body: "TailwindCSS",
+    img: "TailwindCSS.svg",
+  },
+  {
+    name: "React",
+    username: "@react",
+    body: "React",
+    img: "react.svg",
+  },
+  {
+    name: "Jane",
+    username: "@jane",
+    body: "Ligne du bas",
+    img: "https://avatar.vercel.sh/jane",
+  },
+  {
+    name: "NextJS",
+    username: "@nextjs",
+    body: "Next.JS",
+    img: "nextjs.svg",
+  },
+  {
+    name: "PHP",
+    username: "@PHP",
+    body: "PHP",
+    img: "php.svg",
+  },
+];
+
+const firstRow = reviews.slice(0, reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
+
+const ReviewCard = ({ img, body }: { img: string; body: string }) => {
   return (
-    <Section className="flex flex-col items-start gap-4">
-      <Badge variant={"outline"}>Skills</Badge>
-      <h2 className=" pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        I love working on...
-      </h2>
-      <div className="flex max-md:flex-col gap-4">
-        <div className="flex flex-col gap-2">
-          <ReactLogo size={42} className="animate-spin" style={{
-            animationDuration: "10s",
-          }} />
-          <h3 className="text-2xl font-semibold tracking-tight">
-            React
-          </h3>
-          <p className="text-sm text-muted-foreground">
-            My main framework is <Code>React</Code>. I also use <Code>Next.js</Code> as a back-end and frontend framework.
-          </p>
+    <Section>
+      {" "}
+      <figure
+        className={cn(
+          "relative w-auto cursor-pointer overflow-hidden rounded-xl border p-2"
+        )}
+      >
+        <div className="flex flex-row items-center gap-2">
+          <img
+            // className="rounded-full"
+            width="32"
+            height="32"
+            alt=""
+            src={img}
+          />
         </div>
-        <div className="flex flex-col gap-2">
-          <TailwindLogo size={42} />
-          <h3 className="text-2xl font-semibold tracking-tight">
-            Tailwind
-          </h3>
-          <p className="text-sm text-muted-foreground">
-            I can create <u>beautiful</u> applications <i>in seconds</i> using <Code>Tailwind CSS</Code>.
-          </p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <NextJSLogo size={42} />
-          <h3 className="text-2xl font-semibold tracking-tight">
-            React
-          </h3>
-          <p className="text-sm text-muted-foreground">
-            I love using <Code>NextJS</Code>. I try to do my best using <Code>Prisma</Code> with it.
-          </p>
-        </div>
-      </div>
+        <blockquote className="mt-2 text-sm text-center">{body}</blockquote>
+      </figure>
     </Section>
   );
 };
+
+const MarqueeDemo = () => {
+  return (
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+      <p className="text-lg text-muted-foreground">Stacks et Outils</p>
+
+      <Marquee pauseOnHover className="[--duration:20s]">
+        {firstRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
+      <Marquee reverse pauseOnHover className="[--duration:20s]">
+        {secondRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3"></div>
+    </div>
+  );
+};
+
+export default MarqueeDemo;
