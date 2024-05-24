@@ -34,8 +34,9 @@ export const Hero = () => {
           <Link href="https://www.google.fr/maps/place/Paris/@48.8335502,2.2670408,12z/data=!4m6!3m5!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.8575475!4d2.3513765!16zL20vMDVxdGo?entry=ttu">
             <Code className="inline-flex items-center gap-1">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg/langfr-225px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg.png"
-                style={{ width: 16, height: "auto" }}
+                src="/FranceFlag.png"
+                width={16}
+                height={10}
                 className="inline"
                 alt="France Flag"
               />
@@ -48,8 +49,10 @@ export const Hero = () => {
       <div className="flex-[2] max-md:m-auto ml-auto">
         <Image
           src="/JinxedQuinn.png"
+          width={800}
+          height={800}
           className="w-full h-auto max-w-xs max-md:w-56"
-          alt="Chloe Nicolini&apos;s online picture"
+          alt="Chloe Nicolini's online picture"
         />
       </div>
     </Section>

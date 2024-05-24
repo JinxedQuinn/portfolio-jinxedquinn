@@ -15,7 +15,7 @@ export const Contact = () => {
           url="https://www.linkedin.com/in/nicolinichloe/"
           name="Chloé Nicolini"
           image="/JinxedQuinn.png"
-          mediumImage="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png"
+          mediumImage="LinkedIn.svg"
           description="LinkedIn"
         />
         {/* <ContactCard
