@@ -12,7 +12,6 @@ export const ContactCard = (props: {
   url: string;
   classname?: string;
 }) => {
-  console.log("URL: ", props.url); // Affiche l'URL
   return (
     <Link href={props.url} className={cn("w-full", props.classname)}>
       <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4">
