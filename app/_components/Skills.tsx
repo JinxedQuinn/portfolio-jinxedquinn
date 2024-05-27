@@ -74,7 +74,7 @@ const reviews = [
     name: "TailwindCSS",
     username: "@TailwindCSS",
     body: "TailwindCSS",
-    img: "TailwindCSS.svg",
+    img: "tailwindcss.svg",
   },
   {
     name: "React",
