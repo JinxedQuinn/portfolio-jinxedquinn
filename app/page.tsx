@@ -25,7 +25,7 @@ export default function Home() {
 
       <Spacing size="md" />
 
-      {/* <Contact /> */}
+      <Contact />
 
       <Spacing size="md" />
 
