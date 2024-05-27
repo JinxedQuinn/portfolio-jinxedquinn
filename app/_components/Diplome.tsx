@@ -25,8 +25,8 @@ export const DIPLOME: DiplomeProps[] = [
   },
   {
     image: "/Brevet.jpeg",
-    title: "CLAVIM",
-    role: "Brevet des collèges",
+    title: "Brevet des collèges",
+    role: "Brevet",
     date: "2013",
     url: "https://www.education.gouv.fr/annuaire/24800/thiviers/college/0240040n/college-leonce-bourliaguet.html",
   },

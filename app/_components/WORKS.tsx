@@ -15,7 +15,7 @@ export const WORKS: WorkProps[] = [
     title: "CLAVIM",
     role: "Animatrice Jeunesse, Animations de quartier",
     date: "Juillet 2021",
-    url: "https://www.ubereats.com/fr",
+    url: "http://www.clavim.asso.fr/",
     freelance: false,
   },
   {
@@ -40,6 +40,7 @@ export const WORKS: WorkProps[] = [
     url: "http://www.clavim.asso.fr/espace-jeunes-anne-frank",
   },
 ];
+
 type WorkProps = {
   image: string;
   title: string;

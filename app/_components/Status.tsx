@@ -18,7 +18,7 @@ export const Status = () => {
                 Logo={project.Logo}
                 title={project.title}
                 description={project.description}
-                url="/"
+                url={project.url}
               />
             ))}
           </div>

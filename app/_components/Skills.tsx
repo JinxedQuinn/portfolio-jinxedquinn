@@ -83,10 +83,10 @@ const reviews = [
     img: "react.svg",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "Ligne du bas",
-    img: "https://avatar.vercel.sh/jane",
+    name: "Windows",
+    username: "Windows",
+    body: "Windows",
+    img: "windows.svg",
   },
   {
     name: "NextJS",
@@ -116,14 +116,14 @@ const ReviewCard = ({ img, body }: { img: string; body: string }) => {
       >
         <div className="flex flex-row items-center gap-2">
           <img
-            // className="rounded-full"
-            width="32"
-            height="32"
+            className="rounded items-center justify-center"
+            width="40"
+            height="40"
             alt=""
             src={img}
           />
         </div>
-        <blockquote className="mt-2 text-sm text-center">{body}</blockquote>
+        <blockquote className="mt-2 text-sm text-center ">{body}</blockquote>
       </figure>
     </Section>
   );
