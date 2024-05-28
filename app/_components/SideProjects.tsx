@@ -110,7 +110,7 @@ export const SideProjects = (props: SideProjectsProps) => {
         <props.Logo size={16} />
       </span>
       <div>
-        <div>
+        <div className="flex items-center gap-2">
           <p className="text-lg font-semibold">{props.title}</p>
           {props.perso && <Badge variant="outline">Perso</Badge>}
           {props.friend && <Badge variant="outline">Partenariat</Badge>}
