@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+Couleurs plus fun
+Elements interface arrondis
+Stacks icones pas très visibles, versions blanches ? Ajouter un fond ?
+Centrer textes par rapport aux logos
+Aligner au centre hero avec nom et avatar
+bg sur sticky navbar
+Logos : Meme hauteur pr aligner les textes sur la meme ligne horizontale
