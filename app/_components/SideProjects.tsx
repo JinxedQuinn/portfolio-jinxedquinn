@@ -12,6 +12,7 @@ import {
   Rss,
   Smartphone,
 } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 export const SIDE_PROJECTS: SideProjectsProps[] = [
   // {
@@ -38,12 +39,14 @@ export const SIDE_PROJECTS: SideProjectsProps[] = [
     description:
       "Projet de site web pour un restaurant français aux États-Unis. Codé avec Ryo Rafael, propriétaire du projet",
     url: "https://github.com/ryorafael/lefoufrog",
+    friend: true,
   },
   {
     Logo: GlassWater,
     title: "Monster Collection",
     description: "Un tracker de collection de canettes de Monster Energy",
     url: "https://github.com/JinxedQuinn/monstercollection",
+    perso: true,
   },
   {
     Logo: Beer,
@@ -51,6 +54,7 @@ export const SIDE_PROJECTS: SideProjectsProps[] = [
     description:
       "J'ai choisi de mon plein gré, de refaire le site de la Mutinerie",
     url: "https://github.com/JinxedQuinn/lamutinerie",
+    perso: true,
   },
   {
     Logo: Home,
@@ -83,6 +87,7 @@ export const SIDE_PROJECTS: SideProjectsProps[] = [
     description:
       "Une boîte à suggestions pour que les étudiant.e.s puissent s'exprimer anonymement",
     url: "https://github.com/JinxedQuinn/AdaBox",
+    perso: true,
   },
 ];
 
@@ -91,6 +96,8 @@ type SideProjectsProps = {
   title: string;
   description: string;
   url: string;
+  perso?: boolean;
+  friend?: boolean;
 };
 
 export const SideProjects = (props: SideProjectsProps) => {
@@ -103,7 +110,11 @@ export const SideProjects = (props: SideProjectsProps) => {
         <props.Logo size={16} />
       </span>
       <div>
-        <p className="text-lg font-semibold">{props.title}</p>
+        <div>
+          <p className="text-lg font-semibold">{props.title}</p>
+          {props.perso && <Badge variant="outline">Perso</Badge>}
+          {props.friend && <Badge variant="outline">Partenariat</Badge>}
+        </div>
         <p className="text-sm text-muted-foreground">{props.description}</p>
       </div>
     </Link>
