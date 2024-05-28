@@ -20,18 +20,21 @@ export const SIDE_PROJECTS: SideProjectsProps[] = [
   //   title: "Pride Score",
   //   description: "Site web footbalistique répertoriant toutes les compétitions de football amateures féminines non affiliées à la FFF. A venir",
   //   url: "/",
+  //   perso: true,
   // },
   {
     Logo: Smartphone,
     title: "Projet Mobile",
     description: "Projet Mobile sur React Native et Go",
     url: "https://github.com/adatechschool/projet-collectif-mobile-ACG",
+    school: true,
   },
   {
     Logo: Rss,
     title: "Projet Microblogging",
     description: "Projet Microblogging sur Docker et Laravel",
     url: "https://github.com/adatechschool/projet-collectif-microblogging-clement-chloe-chloe-tom",
+    school: true,
   },
   {
     Logo: ChefHat,
@@ -61,12 +64,14 @@ export const SIDE_PROJECTS: SideProjectsProps[] = [
     title: "Projet Meuble",
     description: "Une plateforme de vente de meuble, avec le front et le back",
     url: "https://github.com/JinxedQuinn/projetMeuble",
+    school: true,
   },
   {
     Logo: CircleFadingPlus,
     title: "Send",
     description: "Un réseau social prenant comme modèle Twitter, codé en PHP",
     url: "https://github.com/adatechschool/reseau-social-php-chacsocialnetwork?tab=readme-ov-file",
+    school: true,
   },
   {
     Logo: Coins,
@@ -74,12 +79,14 @@ export const SIDE_PROJECTS: SideProjectsProps[] = [
     description:
       "Une extension navigateur qui sert à calculer le taux de change monétaire",
     url: "https://github.com/adatechschool/extension-navigateur-extentionnavigateur-cgr",
+    school: true,
   },
   {
     Logo: Gamepad,
     title: "Pokemon Project",
     description: "Un Pokédex avec utilisation de l'API Pokémon Officielle",
     url: "https://github.com/Stoyots/pokemonFinal",
+    school: true,
   },
   {
     Logo: Inbox,
@@ -98,6 +105,7 @@ type SideProjectsProps = {
   url: string;
   perso?: boolean;
   friend?: boolean;
+  school?: boolean;
 };
 
 export const SideProjects = (props: SideProjectsProps) => {
@@ -114,6 +122,7 @@ export const SideProjects = (props: SideProjectsProps) => {
           <p className="text-lg font-semibold">{props.title}</p>
           {props.perso && <Badge variant="outline">Perso</Badge>}
           {props.friend && <Badge variant="outline">Partenariat</Badge>}
+          {props.school && <Badge variant="outline">École</Badge>}
         </div>
         <p className="text-sm text-muted-foreground">{props.description}</p>
       </div>
