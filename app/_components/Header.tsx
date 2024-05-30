@@ -33,7 +33,7 @@ export const Header = () => {
             <KofiIcon size={16} className="text-foreground" />
           </Link>
           <Link
-            href="/"
+            href="/accueil"
             className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
           >
             <PawIcon size={16} className="text-foreground" />

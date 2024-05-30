@@ -89,7 +89,9 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
+    plugins: [require("tailwindcss-animate"), require('daisyui')],
+    tailwindcss: { },
+    autoprefixer: { },
+  };
 
 export default config
